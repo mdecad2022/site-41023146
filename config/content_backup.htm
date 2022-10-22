@@ -38,7 +38,7 @@ var winkVideoData = {
 <div class="winkVideoPlayOverlayClass"></div>
 </div>
 <h1>Stud</h1>
-<p>如何連線stud.cycu.org並執行動態網站?</p>
+<p><strong>如何連線stud.cycu.org並執行動態網站?</strong></p>
 <p>1.首先要開啟cmd(小黑窗)中執行ssh cad(學號)@stud.cycu.org</p>
 <p> *若要用可攜中start.bat中的cmd要先將start.bat用編譯器打開並將第三行蓋掉,然後重新啟動。</p>
 <p>2.執行完會要你打密碼,密碼在學校Mail2000,10/04的一封<span style="color: #353531; font-family: Arial, Verdana, 'Lucida Sans'; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f2f2f1; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">stud.cycu.org 帳號通知信</span>裡。</p>
@@ -51,15 +51,15 @@ var winkVideoData = {
 <p>    2.git config --global user.email "Github信箱"</p>
 <p>    3.git config --global http.proxy http://p42.cycu.org:3128</p>
 <p>7.將遠端Github的倉儲克隆下來,有以下兩種方法:</p>
-<p>    1.http協定:git.clone --recurse-submodules https://github.com/mdecad2022/site-xxxxxxxx.git</p>
-<p>    2.ssh協定:git.clone --recurse-submodules git@github.com:mdecad2022/site-xxxxxxxx.git</p>
+<p>    1.http協定:git clone --recurse-submodules https://github.com/mdecad2022/site-xxxxxxxx.git</p>
+<p>    2.ssh協定:git clone --recurse-submodules git@github.com:mdecad2022/site-xxxxxxxx.git</p>
 <p>*由於克隆的方式不一樣倉儲中.git中的config設定也不同,因為最後是要用ssh推送到Github,</p>
 <p>用https克隆的要將config設定改成ssh的樣子,也就是將https://github.com/mdecad2022/site-xxxxxxxx.git</p>
 <p>改成git@github.com:mdecad2022/site-xxxxxxxx.git</p>
 <p>8.再來要下載server.py的檔案用編輯器將自己9開頭的埠號輸入並將檔案用FileZilla送到倉儲目錄下</p>
 <p>9.然後在小黑窗執行cd site-xxxxxxxx移動到倉儲目錄下執行python3 server.py(沒出現東西就算成功)</p>
 <p>10.在firefox或waterfox中執行https:stud.cycu.org:8xxx</p>
-<p></p><h1>Brython</h1>
+<p>*若有設定proxy要關掉</p><h1>Brython</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
