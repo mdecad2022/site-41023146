@@ -2,6 +2,7 @@
         <head>
         <title>cmsite</title>
         <meta charset="utf-8">
+<meta property="head" content="H1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -94,6 +95,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -139,4 +141,76 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='Replit.html'>Replit</a><li><a href='Stud.html'>Stud</a><li><a href='Brython.html'>Brython</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">Replit << <a href='Replit.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>Stud</h1>
+<p><strong>如何連線stud.cycu.org並執行動態網站?</strong></p>
+<p>1.首先要開啟cmd(小黑窗)中執行ssh cad(學號)@stud.cycu.org</p>
+<p> *若要用可攜中start.bat中的cmd要先將start.bat用編譯器打開並將第三行蓋掉,然後重新啟動。</p>
+<p>2.執行完會要你打密碼,密碼在學校Mail2000,10/04的一封<span style="color: #353531; font-family: Arial, Verdana, 'Lucida Sans'; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #f2f2f1; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">stud.cycu.org 帳號通知信</span>裡。</p>
+<p>3.連線完會進到OpenSSH SSH client的黑窗,再來是要生成ssh的key,在黑框中執行ssh-keygen。</p>
+<p>4.接下來就是要用FileZilla連線stud.cycu.org將.ssh目錄下的id_rsa.pub拉到本地的目錄中,</p>
+<p>再用編譯器打開,並將內容送入到Github-&gt;Settings-&gt;SSH and GPG keys。</p>
+<p>5.然後下載config並用FileZilla送進.ssh目錄下</p>
+<p>6.然後在OpenSSH SSH client中執行以下三個指令:</p>
+<p>    1.git config --global user.name "Github帳號名"</p>
+<p>    2.git config --global user.email "Github信箱"</p>
+<p>    3.git config --global http.proxy http://p42.cycu.org:3128</p>
+<p>7.將遠端Github的倉儲克隆下來,有以下兩種方法:</p>
+<p>    1.http協定:git.clone --recurse-submodules https://github.com/mdecad2022/site-xxxxxxxx.git</p>
+<p>    2.ssh協定:git.clone --recurse-submodules git@github.com:mdecad2022/site-xxxxxxxx.git</p>
+<p>*由於克隆的方式不一樣倉儲中.git中的config設定也不同,因為最後是要用ssh推送到Github,</p>
+<p>用https克隆的要將config設定改成ssh的樣子,也就是將https://github.com/mdecad2022/site-xxxxxxxx.git</p>
+<p>改成git@github.com:mdecad2022/site-xxxxxxxx.git</p>
+<p>8.再來要下載server.py的檔案用編輯器將自己9開頭的埠號輸入並將檔案用FileZilla送到倉儲目錄下</p>
+<p>9.然後在小黑窗執行cd site-xxxxxxxx移動到倉儲目錄下執行python3 server.py(沒出現東西就算成功)</p>
+<p>10.在firefox或waterfox中執行https:stud.cycu.org:8xxx</p>
+<p>*若有設定proxy要關掉</p><br />Replit << <a href='Replit.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
