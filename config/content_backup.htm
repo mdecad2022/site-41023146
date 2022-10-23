@@ -87,21 +87,24 @@ var winkVideoData1 = {
 <p>1.將FileZillaPortable_3.61.0.paf.exe解壓縮並打開FileZillaPortable.exe。</p>
 <p><img alt="" height="91" src="/images/filezilla.png" width="438"/></p>
 <p>2.打開檔案中的站台管理員。<img alt="" height="162" src="/images/filezilla1.png" width="489"/></p>
-<p>3.然後新增站台協定設定為SFTP,主機為stud.cycu.org,登入類型選詢問密碼,使用者為cad(學號)。<img alt="" height="274" src="/images/filezilla2.png" width="458"/></p>
+<p>3.然後新增站台協定設定為SFTP,主機為stud.cycu.org,登入類型選詢問密碼,</p>
+<p>使用者為cad(學號)。</p>
+<p><img alt="" height="274" src="/images/filezilla2.png" width="458"/></p>
 <p>4.輸入密碼(和小黑窗連線伺服器的密碼一致)</p>
-<p><img alt="" height="225" src="/images/filezilla3.png" width="218"/></p>
-<h2>SSH Push</h2>
-<p>如何在stud.cycu.org伺服器中用ssh協定推送?</p>
+<p><img alt="" height="225" src="/images/filezilla3.png" width="218"/></p><h2>SSH Push</h2>
+<p><strong>如何在stud.cycu.org伺服器中用ssh協定推送?</strong></p>
 <p></p>
 <p>1.先用<a href="https://mdecad2022.github.io/site-41023146/content/FileZilla.html">FileZilla</a>將acp移動到倉儲目錄下。</p>
 <p><img alt="" height="204" src="/images/push.png" width="369"/></p>
-<p>2.執行ssh-keygeng生成sshkey並將key(id_rsa.pub)送到Github。</p>
+<p>2.執行ssh-keygen生成sshkey並將key(id_rsa.pub)送到Github。</p>
+<p><img alt="" height="33" src="/images/push4.png" width="442"/></p>
 <p>3..確認倉儲中.git中的config和.ssh目錄下的config的Host兩者對應。</p>
 <p><img alt="" height="75" src="/images/push1.png" width="487"/></p>
 <p>4.倉儲中.git中的config的remote "origin"是否為ssh協定。</p>
 <p>*就是ssh克隆的樣子*若用https協定克隆則要修改#灰色部分就是要和上面Host對應的部分</p>
 <p><img alt="" height="218" src="/images/push2.png" width="489"/></p>
-<p>4.</p><h1>Schedule</h1>
+<p>5.動態網頁更新完轉靜態然後變更目錄(cd)到倉儲目錄執行source acp "標題"。</p>
+<p><img alt="" height="25" src="/images/push3.png" width="464"/></p><h1>Schedule</h1>
 <p></p>
 <p><strong>week</strong>1</p>
 <p>1.中秋節放假。</p>
