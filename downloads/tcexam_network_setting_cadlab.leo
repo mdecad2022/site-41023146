@@ -216,7 +216,7 @@ isright</t>
 &lt;inline_answers&gt;false&lt;/inline_answers&gt;
 &lt;auto_next&gt;false&lt;/auto_next&gt;
 &lt;description&gt;w5&lt;/description&gt;
-&lt;explanation&gt;&lt;/explanation&gt;
+&lt;explanation&gt;出題者:41023146&lt;/explanation&gt;
 @others
 &lt;/question&gt;
 </t>
@@ -285,7 +285,7 @@ isright</t>
 &lt;inline_answers&gt;false&lt;/inline_answers&gt;
 &lt;auto_next&gt;false&lt;/auto_next&gt;
 &lt;description&gt;w6&lt;/description&gt;
-&lt;explanation&gt;&lt;/explanation&gt;
+&lt;explanation&gt;出題者:41023146&lt;/explanation&gt;
 @others
 &lt;/question&gt;
 </t>
@@ -426,7 +426,7 @@ isright</t>
 &lt;inline_answers&gt;false&lt;/inline_answers&gt;
 &lt;auto_next&gt;false&lt;/auto_next&gt;
 &lt;description&gt;NX&lt;/description&gt;
-&lt;explanation&gt;&lt;/explanation&gt;
+&lt;explanation&gt;出題者:41023147&lt;/explanation&gt;
 @others
 &lt;/question&gt;
 </t>
@@ -533,7 +533,7 @@ isright</t>
 &lt;inline_answers&gt;false&lt;/inline_answers&gt;
 &lt;auto_next&gt;false&lt;/auto_next&gt;
 &lt;description&gt;SolidWorks&lt;/description&gt;
-&lt;explanation&gt;&lt;/explanation&gt;
+&lt;explanation&gt;出題者:41023143&lt;/explanation&gt;
 @others
 &lt;/question&gt;
 </t>
@@ -642,7 +642,7 @@ isright</t>
 &lt;inline_answers&gt;false&lt;/inline_answers&gt;
 &lt;auto_next&gt;false&lt;/auto_next&gt;
 &lt;description&gt;w8_w9&lt;/description&gt;
-&lt;explanation&gt;&lt;/explanation&gt;
+&lt;explanation&gt;出題者:41023104&lt;/explanation&gt;
 @others
 &lt;/question&gt;
 </t>
